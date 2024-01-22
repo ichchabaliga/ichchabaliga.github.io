@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichcha Baliga's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/css/uikit.min.css" />
+    <style>
+   
+        .skills-container {
+            position: relative;
+            height: 600px;
+            background: #ffffff; /* Example background color */
+            color: #ffff;
+            /* border: 2px solid #C3073f; */
+            box-shadow: horizontal-offset vertical-offset blur-radius spread-radius color;
+
+        }
+        .skill {
+            position: absolute;
+            padding: 10px 20px;
+            background: #ddd; /* Example background color */
+            border-radius: 40px;
+            background: -webkit-linear-gradient(90deg, #5D001E, #C3073f);
+            font-size: 25px;
+            width: 14%;
+        }
+        .skill-heading {
+           
+    position: absolute;
+    top: 52%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    padding: 20px;
+    background: #000000;
+    color: white;
+    border-radius: 50%;
+    z-index: 10;
+}
+        
+        /* Predefined "random" positions for skill divs */
+        .skill-1 { top: 15%; left: 43%;
+         }
+        .skill-2 { top: 30%; left: 23%; }
+        .skill-3 { top: 30%; left: 63%; }
+        .skill-4 { top: 45%; left: 13%; }
+        .skill-5 { top: 45%; left: 73%; }
+        .skill-6 { top: 64%; left: 67%; }
+        .skill-7 { top: 64%; left: 20%; }
+        .skill-8 { top: 76%; left: 51%; }
+        .skill-9 { top: 76%; left: 32%; }
+        /* Add more as needed */
+    
+        .custom-section {
+            background-color: #f5f5f5;
+        }
+        .education-background {
+            /* background-color: #6f6d6d; */
+        }
+        .skills-background {
+            background-color: rgb(255, 255, 255);
+        }
+        .footer-background {
+            background-color: #6f2232;
+        }
+        .navbar-custom {
+            background-color: #5D001E;
+        }
+        .section-headings {
+            text-align: center;
+            size: 50px;
+            font-weight: bold;
+            
+            background: -webkit-linear-gradient(90deg, #5D001E, #C3073f,#ff3e65); /* Define your gradient colors */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text itself transparent, showing the background */
+  -webkit-text-fill-color: transparent; /* Needed for Safari */
+
+        }
+        .card-custom {
+            background-color: rgb(255, 255, 255);
+            border-radius: 30px;
+            width: 400px;
+            height: max-content;
+            left:9%;
+            color: black;
+            border: 4px solid #C3073f;
+        }
+        .soft-skills-cards .uk-card {
+            height: 10px;
+            border-radius: 50px;
+        }
+        .uk-card-media-top img {
+            width: 100%; /* Responsive image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .uk-progress::-webkit-progress-value {
+        background-color: #6f2232; /* Replace with your desired color */
+    }
+.badge-color{
+    background-color: #af344d;
+}
+.badge-color-domain{
+    background-color: #ee3056;
+}
+    /* Custom CSS for Mozilla browsers */
+    .uk-progress::-moz-progress-bar {
+        background-color: #6f2232; /* Replace with your desired color */
+    }
+        .progress-bar {
+            color: #5D001E;
+        }
+        .timeline-container {
+            position: relative;
+            padding: 50px 0;
+        }
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ddd;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-card {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+        .timeline-card::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color:#6f2232 ;
+            border: 4px solid #C3073f;
+            border-radius: 50%;
+            top: 15px;
+            left:49.5%;
+            z-index: 1;
+        }
+        .timeline-card:nth-child(odd) {
+            margin-left: 50%;
+            padding-left: 0;
+            padding-right: 30px;
+        }
+        .timeline-card:nth-child(odd)::before {
+            left: -2%;
+            right: -60px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="custom-section">
+    <!-- Header -->
+    <nav class="uk-navbar-container navbar-custom" uk-navbar style="background-color: #1a1a1d; color: beige;">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" style="font: bold; color: aliceblue;" href="#">Ichcha Baliga</a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#edu">Education and Work</a></li>
+                    <li><a href="#proj">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#extra">Extracurriculars</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+    
+                </ul>
+            </div>
+        
+    </nav>
+<br>
+    <!-- About Me Section -->
+    <div id="about" class="uk-section uk-section-secondary uk-light" style="height: max-content;">
+        <div class="uk-container">
+            <div class="uk-section uk-section-secondary uk-light">
+                <div class="uk-container">
+                    <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <h2><i class="fas fa-user"></i> About Me</h2>
+        <p>
+            <i class="fas fa-laptop-code"></i> I'm <strong>Ichcha Baliga</strong>, a passionate Software Engineer pursuing a Master’s in Computer Science at the University of North Carolina, Charlotte. Specializing in Information Security and Privacy, my expertise lies in a diverse range of technologies, including Python, C, Java, and web development frameworks like React and Node. 
+        </p>
+        <p>
+            <i class="fas fa-briefcase"></i> My professional journey at General Electric, developing cybersecurity solutions and optimizing data warehouses, has sharpened my skills in tackling complex technological challenges.
+        </p>
+        <p>
+            <i class="fas fa-rocket"></i> Committed to innovation, I aspire to blend my academic knowledge and practical experience to make significant contributions in cybersecurity and data science. My goal is to create technologically advanced, ethically sound solutions with a focus on efficiency and sustainability.
+        </p>
+                            <div class="contact-icons" >
+                                <a href="https://github.com/" uk-icon="icon: github; ratio: 2"> </a>
+                                <a href="https://instagram.com/achchi_ichcha" uk-icon="icon: instagram; ratio: 2"> </a>
+                                <a href="https://linkedin.com/in/ichchabaliga" uk-icon="icon: linkedin; ratio: 2"> </a>
+                                <a href="mailto:ibaliga@uncc.edu" uk-icon="icon: mail; ratio: 2"> </a>
+                            
+                            </div>
+                        </div>
+                        
+                        <div >
+                            <img class="uk-border-rounded" src="images/ich.png" style="border-radius: 40px;" alt="">
+                        </div>
+                    </div>
+                   
+            
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Technical Skills Section -->
+
+    <div id="skills" class="skills-background uk-padding">
+        <h1 class="section-headings">Technical skills</h1>
+        <div class="uk-child-width-1-3@m" uk-grid>
+             <!-- Card 1 -->
+             <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">Programming Languages</h3>
+                    <div class="uk-margin">Python <progress class="uk-progress" value="100" max="100">  </progress></div>
+                    <div class="uk-margin">JAVA<progress class="uk-progress" value="80" max="100"></progress></div>
+                    <div class="uk-margin">C/C++<progress class="uk-progress" value="70" max="100"></progress></div>
+                    <div class="uk-margin">Javascript<progress class="uk-progress" value="90" max="100"></progress></div>
+                    <!-- ... additional progress bars ... -->
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">Databases</h3>
+                    <div class="uk-margin">MySQL<progress class="uk-progress" value="100" max="100"></progress></div>
+                    <div class="uk-margin">PostGreSQL<progress class="uk-progress" value="80" max="100"></progress></div>
+                    <div class="uk-margin">MongoDB<progress class="uk-progress" value="80" max="100"></progress></div>
+                    <div class="uk-margin">SQLLite<progress class="uk-progress" value="50" max="100"></progress></div>
+                    <div class="uk-margin">Redshift<progress class="uk-progress" value="60" max="100"></progress></div>
+                    <!-- ... additional progress bars ... -->
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">Web Development</h3>
+                    <div class="uk-margin">HTML/CSS<progress class="uk-progress" style="color: #6f2232;" value="100" max="100"></progress></div>
+                    <div class="uk-margin">ReactJS<progress class="uk-progress" value="90" max="100"></progress></div>
+                    <div class="uk-margin">NodeJS<progress class="uk-progress" value="90" max="100"></progress></div>
+                    <div class="uk-margin">AngularJS<progress class="uk-progress" value="50" max="100"></progress></div>
+                    <!-- ... additional progress bars ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-container uk-padding">
+        <div class="skills-container uk-text-center uk-light uk-card uk-card-default">
+            <div class="skill-heading section-headings" style="border: 2px solid black ">Soft Skills</div>
+            <div class="skill skill-8">Teamwork</div>
+            <div class="skill skill-2">Communication</div>
+            <div class="skill skill-3">Creativity</div>
+            <div class="skill skill-4">Critical Thinking</div>
+            <div class="skill skill-6">Leadership</div>
+            <div class="skill skill-5">Attention to Detail</div>
+            <div class="skill skill-7">Resilience</div>
+            <div class="skill skill-1">Problem solving </div>
+            <div class="skill skill-9">Adaptability</div>
+            <!-- Add more skills as needed -->
+        </div>
+    </div>
+    
+    <br>
+
+    <!-- Soft Skills Section -->
+    
+    <br>
+    <!-- Education Section -->
+    <div id="edu" class="education-background uk-padding-large uk-light uk-card uk-card-default" style="padding: 100px; border-radius: 30px;">
+        <h1 class="section-headings">Education and Work Experience </h1>
+
+    <div class="uk-container timeline-container">
+        <!-- Timeline item -->
+        <div class="uk-grid-small uk-flex-middle timeline-card" uk-grid>
+            
+            <div class="uk-width-expand">
+                <div>
+                    <div class="uk-card uk-card-body card-custom">
+                            <img src="images/UNCClogo.png" alt="Image 1" style="height: 100px;">
+                            <p style="font-size: 20px;margin-top: -15px;">University of North Carolina, Charlotte</p>
+                            <p style="margin-top: -15px;">Master of Science in Computer Science</p>
+                            <p style="margin-top:-15px ;">Aug 2022- May 2024</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-grid-small uk-flex-middle timeline-card" uk-grid>
+            
+            <div class="uk-width-expand">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body card-custom">
+                        <img src="images/GE.png" alt="Image 2" style="height: 100px; ">
+                        <p style="font-size: 20px;">General Electric</p>
+                        <p style="margin-top: -15px;">Cybersecurity Engineer </p>
+                        <p style="margin-top: -15px;">Apr 2022 - July 2022</p>
+                        <p style="margin-top: -15px;">Cybersecurity Research Specialist </p>
+                        <p style="margin-top: -15px;">Jan 2021 - Mar 2022</p>
+
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="uk-grid-small uk-flex-middle timeline-card" uk-grid>
+            <div class="uk-width-expand">
+            <div>
+                <div class="uk-card uk-card-default uk-card-body card-custom">
+                    <img src="images/BITLogo.jpeg" alt="Image 2" style="height: 100px; ">
+                    <p style="font-size: 20px;">Bangalore Institute of Technology</p>
+                    <p style="margin-top: -15px;">Bachelor of Engineering in Computer Science</p>
+                    <p style="margin-top: -15px;">Aug 2016 - Aug 2020</p>
+                </div>
+            </div> 
+            </div>
+        </div>
+
+        <div class="uk-grid-small uk-flex-middle timeline-card" uk-grid>
+            
+            <div class="uk-width-expand">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body card-custom">
+                        <img src="images/GE.png" alt="Image 2" style="height: 100px; ">
+                        <p style="font-size: 20px;">General Electric</p>
+                        <p style="margin-top: -15px;">Digital Technology Co-op </p>
+                        <p style="margin-top: -15px;">Jul 2020 - Dec 2020</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="uk-grid-small uk-flex-middle timeline-card" uk-grid>
+            
+            <div class="uk-width-expand">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body card-custom">
+                        <img src="images/Robert_Bosch_GmbH-Logo.wine.png" alt="Image 2" style="height: 100px; ">
+                        <p style="font-size: 20px;">Robert Bosch Engineering and Business Solutions Private Limited (RBEI) </p>
+                        <p style="margin-top: -15px;">Software Engineer </p>
+                        <p style="margin-top: -15px;">Jan 2020 - March 2020</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+            
+           
+       
+       
+        <!-- Repeat the above block for each item in the timeline -->
+    </div>
+
+    </div>
+    <br>
+    <!-- Projects Section -->
+    <div id="proj" class="skills-background uk-padding uk-card">
+        <h1 class="section-headings"> Academic Projects <a href="https://github.com/ichchabaliga" uk-icon="icon: github; ratio: 2"> </a></h1>
+        <div uk-accordion>
+            <div>
+                <a class="uk-accordion-title" href="#">Suspect Sketch retrieval using GAN and NLP.    <span class="uk-badge badge-color-domain">ML</span> <span class="uk-badge badge-color">PyTorch</span>
+                    <span class="uk-badge badge-color">Python</span> </a>
+                <div class="uk-accordion-content">
+                    <p>The Suspect Sketch retrieval using GAN and NLP leverages the power of Generative Adversarial Networks to create a sophisticated system capable of interpreting textual descriptions and generating corresponding images of human faces. This system is trained with a dataset comprising diverse facial images paired with descriptive texts that capture the details of each face—such as age, hair color, facial expression, and other distinguishing features. Developed a user-friendly interface where users can input text and view the generated facial images. </p>
+                </div>
+            </div>
+            <div>
+                <a class="uk-accordion-title" href="#"> Network packet eavesdropping using Wireshark. <span class="uk-badge badge-color-domain">NetSec</span> <span class="uk-badge badge-color">Wireshark</span> <span class="uk-badge badge-color">Telnet</span></a>
+                <div class="uk-accordion-content">
+                    <p>This project involves using Wireshark, a widely-used network protocol analyzer, to capture and analyze network packets. The primary goal is to eavesdrop on network traffic in a controlled and ethical environment to gain insights into how data is transmitted and received over a network. The analysis can reveal a wealth of information about the network's operation, efficiency, and security vulnerabilities.</p>
+                    <img src="images/wireshark1.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/wireshark2.png" alt="Image 2" style="height: 150px; ">
+                </div>
+            </div>
+            <div>
+                <a class="uk-accordion-title" href="#"> Network Anomaly Detection using Neural Networks.   <span class="uk-badge badge-color-domain">ML</span> <span class="uk-badge badge-color-domain">NetSec</span> <span class="uk-badge badge-color">NNs</span> <span class="uk-badge badge-color">TensorFlow </span> <span class="uk-badge badge-color">Python</span> <span class="uk-badge badge-color">MatplotLib</span></a>
+                    
+                <div class="uk-accordion-content">
+                    <p>This project is centered around the development and implementation of a neural network-based system for detecting anomalies in network traffic. Anomalies in network traffic could be indicative of various security threats, such as cyber-attacks, unauthorized access attempts, or other forms of malicious activities. By using neural networks, the project aims to harness their capability for pattern recognition and learning from complex datasets to identify unusual patterns that deviate from normal network behavior.</p>
+                    <img src="images/NN.jpeg" alt="Image 2" style="height: 150px; ">
+
+                </div>
+            </div>
+
+            <div>
+                <a class="uk-accordion-title" href="#">MyBudget: Analysis and Tracker.<span class="uk-badge badge-color-domain">Web</span> <span class="uk-badge badge-color">Python</span> <span class="uk-badge badge-color">MySQL</span> <span class="uk-badge badge-color">ReactJS</span> <span class="uk-badge badge-color">JWT</span><span class="uk-badge badge-color">Jest</span> <span class="uk-badge badge-color">Puppeteer</span> </a>
+                <div class="uk-accordion-content">
+                <p>MyBudget represents a significant evolution from our previous endeavor, Fintrak. While it is rooted in the same fundamental idea of enhancing personal financial management, this project marks a substantial leap forward, employing advanced technologies and methodologies to provide a more robust and efficient user experience.
+
+                
+                </p>
+                <div >
+                    
+                    <img src="images/myBudget1.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/myBudget2.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/MyBudget5.png" alt="Image 2" style="height: 150px; ">
+
+                    <img src="images/Mybudget6.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/MyBudget3.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/MyBudget4.png" alt="Image 2" style="height: 150px; ">
+                    
+
+                </div>
+                </div>
+            </div>
+            <div>
+                <a class="uk-accordion-title" href="#"> Fintrak - Finance Management <span class="uk-badge badge-color-domain">Web</span> <span class="uk-badge badge-color">Nodejs</span> <span class="uk-badge badge-color">MongoDB</span> <span class="uk-badge badge-color">ExpressJS</span> <span class="uk-badge badge-color">JWT</span><span class="uk-badge badge-color">Jest</span>  </a>
+                <div class="uk-accordion-content">
+                
+                <p> This project is focused on developing a comprehensive system that assists users in managing their personal finances more effectively. The tool is designed to be user-friendly, enabling users to easily record, categorize, and analyze their daily financial transactions. By doing so, it helps in understanding spending habits, identifying areas for cost reduction, and planning future budgets more efficiently.
+                </p>
+                <div >
+                    
+                    <!-- <img src="images/myBudget1.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/myBudget2.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/MyBudget3.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/MyBudget4.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/MyBudget5.png" alt="Image 2" style="height: 150px; ">
+                    <img src="images/Mybudget6.png" alt="Image 2" style="height: 150px; "> -->
+
+                </div>
+                </div>
+            </div>
+            
+            <div>
+                <a class="uk-accordion-title" href="#">Taste of India - E-commerce Website for Local Traditional Indian Handicrafts. <span class="uk-badge badge-color-domain">Web</span> <span class="uk-badge badge-color"> Python</span> <span class="uk-badge badge-color">DJango</span> <span class="uk-badge badge-color">MySQL </span> </a>
+                <div class="uk-accordion-content">
+                    <p> Taste of India is an innovative e-commerce platform, reminiscent of the Amazon model, dedicated to bringing the diverse and traditional handicrafts of India to a global audience. This platform serves as a digital bridge connecting local Indian artisans and craftsmen with customers worldwide, offering a wide range of authentic and handcrafted Indian products.</p>
+                </div>
+            </div>
+            <!-- <div>
+                <a class="uk-accordion-title" href="#">Sentiment Analysis Using LSTM</a>
+                <div class="uk-accordion-content">
+                    <p>Sentiment Analysis Using LSTM</p>
+                </div>
+            </div> -->
+            <!-- Repeat for other projects -->
+        </div>
+    </div>
+
+    <!-- Work Experience Section -->
+    <br>
+
+    <!-- Extracurriculars Section -->
+    <!-- <div id="extra" class="uk-padding uk-light uk-card uk-card-default">
+        <h1 class="section-headings ">Extracurriculars</h1>
+        <div uk-slider>
+
+            <div class="uk-position-relative">
+                <div class="uk-slider-container uk-light"  class="uk-height-${0|1-1,small,medium,large|}" >
+                    <ul uk-height-viewport="offset-top: true; offset-bottom: 100" class="uk-slider-items uk-grid uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img1.jpeg"  alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img2.jpeg"  alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img3.jpeg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img4.jpeg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img5.jpeg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img6.jpeg"  alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img7.jpeg"  alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img8.jpeg"  alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img9.jpeg"  alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/img10.jpeg"  alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        
+                    </ul>
+                </div>
+        
+                <div class="uk-hidden@s uk-light">
+                    <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+        
+                <div class="uk-visible@s">
+                    <a class="uk-position-center-left-out uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right-out uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+        
+            </div>
+        
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        
+        </div>    </div> -->
+
+    <!-- Footer -->
+    <footer class="uk-footer footer-background">
+        <p>© 2024 Ichcha Baliga</p>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit-icons.min.js"></script>
+</body>
+</html>
