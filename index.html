@@ -169,7 +169,7 @@
                     <li><a href="#proj">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#extra">Extracurriculars</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a id="showDocBtn" href="#">Resume</a></li>
                     <li><a href="#">Contact</a></li>
     
                 </ul>
@@ -362,7 +362,7 @@
     <br>
     <!-- Projects Section -->
     <div id="proj" class="skills-background uk-padding uk-card">
-        <h1 class="section-headings"> Academic Projects <a href="https://github.com/ichchabaliga" uk-icon="icon: github; ratio: 2"> </a></h1>
+        <h1 class="section-headings"> Academic Projects <a href="https://github.com/ichchabaliga" style="color: #5D001E;" uk-icon="icon: github; ratio: 2"> </a></h1>
         <div uk-accordion>
             <div>
                 <a class="uk-accordion-title" href="#">Suspect Sketch retrieval using GAN and NLP.    <span class="uk-badge badge-color-domain">ML</span> <span class="uk-badge badge-color">PyTorch</span>
@@ -574,5 +574,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit-icons.min.js"></script>
+<script>
+    // JavaScript to open the resume in a new window
+    document.getElementById('showDocBtn').addEventListener('click', function() {
+        window.open('Ichcha_resume15.pdf', '_blank');
+    });
+</script>
 </body>
 </html>
