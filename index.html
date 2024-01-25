@@ -152,6 +152,12 @@
             left: -2%;
             right: -60px;
         }
+        .contact-info {
+            margin-top: 20px;
+
+            align-items: center;
+
+        }
     </style>
 </head>
 <body>
@@ -217,15 +223,15 @@
 
     <div id="skills" class="skills-background uk-padding">
         <h1 class="section-headings">Technical skills</h1>
-        <div class="uk-child-width-1-3@m" uk-grid>
+        <div class="uk-child-width-1-4@m" uk-grid>
              <!-- Card 1 -->
              <div>
                 <div class="uk-card uk-card-default uk-card-body">
                     <h3 class="uk-card-title">Programming Languages</h3>
-                    <div class="uk-margin">Python <progress class="uk-progress" value="100" max="100">  </progress></div>
-                    <div class="uk-margin">JAVA<progress class="uk-progress" value="80" max="100"></progress></div>
-                    <div class="uk-margin">C/C++<progress class="uk-progress" value="70" max="100"></progress></div>
-                    <div class="uk-margin">Javascript<progress class="uk-progress" value="90" max="100"></progress></div>
+                    <div class="uk-margin">Python - 100%<progress class="uk-progress" value="100" max="100"></progress></div>
+                    <div class="uk-margin">JAVA - 80%<progress class="uk-progress" value="80" max="100"></progress></div>
+                    <div class="uk-margin">C/C++ - 70%<progress class="uk-progress" value="70" max="100"></progress></div>
+                    <div class="uk-margin">Javascript - 90%<progress class="uk-progress" value="90" max="100"></progress></div>
                     <!-- ... additional progress bars ... -->
                 </div>
             </div>
@@ -233,11 +239,11 @@
             <div>
                 <div class="uk-card uk-card-default uk-card-body">
                     <h3 class="uk-card-title">Databases</h3>
-                    <div class="uk-margin">MySQL<progress class="uk-progress" value="100" max="100"></progress></div>
-                    <div class="uk-margin">PostGreSQL<progress class="uk-progress" value="80" max="100"></progress></div>
-                    <div class="uk-margin">MongoDB<progress class="uk-progress" value="80" max="100"></progress></div>
-                    <div class="uk-margin">SQLLite<progress class="uk-progress" value="50" max="100"></progress></div>
-                    <div class="uk-margin">Redshift<progress class="uk-progress" value="60" max="100"></progress></div>
+                    <div class="uk-margin">MySQL - 100%<progress class="uk-progress" value="100" max="100"></progress></div>
+                    <div class="uk-margin">PostGreSQL - 80%<progress class="uk-progress" value="80" max="100"></progress></div>
+                    <div class="uk-margin">MongoDB - 80%<progress class="uk-progress" value="80" max="100"></progress></div>
+                    <div class="uk-margin">SQLLite - 50%<progress class="uk-progress" value="50" max="100"></progress></div>
+                    <div class="uk-margin">Redshift - 60%<progress class="uk-progress" value="60" max="100"></progress></div>
                     <!-- ... additional progress bars ... -->
                 </div>
             </div>
@@ -245,10 +251,22 @@
             <div>
                 <div class="uk-card uk-card-default uk-card-body">
                     <h3 class="uk-card-title">Web Development</h3>
-                    <div class="uk-margin">HTML/CSS<progress class="uk-progress" style="color: #6f2232;" value="100" max="100"></progress></div>
-                    <div class="uk-margin">ReactJS<progress class="uk-progress" value="90" max="100"></progress></div>
-                    <div class="uk-margin">NodeJS<progress class="uk-progress" value="90" max="100"></progress></div>
-                    <div class="uk-margin">AngularJS<progress class="uk-progress" value="50" max="100"></progress></div>
+                    <div class="uk-margin">HTML/CSS - 100%<progress class="uk-progress" style="color: #6f2232;" value="100" max="100"></progress></div>
+                    <div class="uk-margin">ReactJS - 90%<progress class="uk-progress" value="90" max="100"></progress></div>
+                    <div class="uk-margin">NodeJS - 90%<progress class="uk-progress" value="90" max="100"></progress></div>
+                    <div class="uk-margin">AngularJS - 50%<progress class="uk-progress" value="50" max="100"></progress></div>
+                    <!-- ... additional progress bars ... -->
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">Cloud Services and Deployment </h3>
+                    <div class="uk-margin">AWS - 70%<progress class="uk-progress" value="70" max="100">  </progress></div>
+                    <div class="uk-margin">GCP - 50%<progress class="uk-progress" value="50" max="100"></progress></div>
+                    <div class="uk-margin">Docker - 90%<progress class="uk-progress" value="90" max="100"></progress></div>
+                    <div class="uk-margin">Github - 100%<progress class="uk-progress" value="100" max="100"></progress></div>
+                    <div class="uk-margin">Jenkins - 60%<progress class="uk-progress" value="60" max="100"></progress></div>
+
                     <!-- ... additional progress bars ... -->
                 </div>
             </div>
@@ -401,7 +419,6 @@
                     <img src="images/myBudget1.png" alt="Image 2" style="height: 150px; ">
                     <img src="images/myBudget2.png" alt="Image 2" style="height: 150px; ">
                     <img src="images/MyBudget5.png" alt="Image 2" style="height: 150px; ">
-
                     <img src="images/Mybudget6.png" alt="Image 2" style="height: 150px; ">
                     <img src="images/MyBudget3.png" alt="Image 2" style="height: 150px; ">
                     <img src="images/MyBudget4.png" alt="Image 2" style="height: 150px; ">
@@ -567,8 +584,18 @@
         </div>    </div> -->
 
     <!-- Footer -->
-    <footer class="uk-footer footer-background">
-        <p>© 2024 Ichcha Baliga</p>
+    <footer class="uk-footer footer-background uk-child-width-1-2@m" uk-grid style="color: #969090;">
+        
+        <div><p>© 2024 Ichcha Baliga</p></div>
+        
+        <div class="contact-icons"  style="left:100%">
+            <a href="https://github.com/ichchabaliga" uk-icon="icon: github; ratio: 1"> </a>
+            <a href="https://instagram.com/achchi_ichcha" uk-icon="icon: instagram; ratio: 1"> </a>
+            <a href="https://linkedin.com/in/ichchabaliga" uk-icon="icon: linkedin; ratio: 1"> </a>
+            <a href="mailto:ibaliga@uncc.edu" uk-icon="icon: mail; ratio: 1"> </a>
+        
+        </div>
+        
     </footer>
 </div>
 
